@@ -36,7 +36,7 @@ class ZeravaneEngine:
 
     def __init__(self, chroma_path="./chroma_db"):
         import streamlit as st
-        api_key = st.secrets["AIzaSyAuvefhBLVgAaLLXBrqC5mMpIQGpzTdvkw"]
+        api_key = st.secrets["GEMINI_API_KEY"]
         self.model_name = "gemini-2.5-flash"
         self.chroma_client = chromadb.PersistentClient(path=chroma_path)
 
