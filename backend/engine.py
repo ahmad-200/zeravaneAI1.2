@@ -35,7 +35,8 @@ class ZeravaneEngine:
     MIN_TEXT_LENGTH = 100  # Minimum chars to consider a scrape valid
 
     def __init__(self, chroma_path="./chroma_db"):
-        self.client = genai.Client()
+        import streamlit as st
+        api_key = st.secrets["c4de735c-2db1-4742-a5e7-c70cc4d6760d"]
         self.model_name = "gemini-2.5-flash"
         self.chroma_client = chromadb.PersistentClient(path=chroma_path)
 
