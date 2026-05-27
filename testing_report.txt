@@ -1,0 +1,8 @@
+# ZeravaneAI Testing Report
+
+## Test Results
+
+- AI Question → Working
+- News scraping → Working
+- Empty input → Handled
+- Invalid URL → Error handled properly

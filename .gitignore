@@ -7,7 +7,7 @@ venv/
 .venv/
 
 # ChromaDB — never commit your local index
-chroma_store/
+chroma_db/
 
 # IDE
 .idea/
